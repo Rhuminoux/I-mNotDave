@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 981ed4eebf904284caf86b929f4f5b56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 848961232974564480
+    second: Algues-1_0
+  - first:
+      213: 3665196189316963005
+    second: Algues-1_1
+  - first:
+      213: -3945446716586006549
+    second: Algues-1_2
+  - first:
+      213: 6548858818065855013
+    second: Algues-1_3
+  - first:
+      213: -4112438180768037118
+    second: Algues-1_4
+  - first:
+      213: -6430751809887165817
+    second: Algues-1_5
+  - first:
+      213: 8065798719615257493
+    second: Algues-1_6
+  - first:
+      213: -6906497812767440084
+    second: Algues-1_7
+  - first:
+      213: 2736408701841357405
+    second: Algues-1_8
+  - first:
+      213: 480379027822055503
+    second: Algues-1_9
+  - first:
+      213: -4291578316266424326
+    second: Algues-1_10
+  - first:
+      213: -9175957438706999350
+    second: Algues-1_11
+  - first:
+      213: 4049435099221516846
+    second: Algues-1_12
+  - first:
+      213: -5412950794382637041
+    second: Algues-1_13
+  - first:
+      213: -4666577028943567272
+    second: Algues-1_14
+  - first:
+      213: -7158485120287372482
+    second: Algues-1_15
+  - first:
+      213: 5848975917538595533
+    second: Algues-1_16
+  - first:
+      213: 2188251226447526646
+    second: Algues-1_17
+  - first:
+      213: 8543507176029196278
+    second: Algues-1_18
+  - first:
+      213: -5512075353884299966
+    second: Algues-1_19
+  - first:
+      213: 2581905250854652255
+    second: Algues-1_20
+  - first:
+      213: -7152275831226946351
+    second: Algues-1_21
+  - first:
+      213: 3550450167467767775
+    second: Algues-1_22
+  - first:
+      213: -2186832306086765562
+    second: Algues-1_23
+  - first:
+      213: 289110582695873634
+    second: Algues-1_24
+  - first:
+      213: 3265302831442165212
+    second: Algues-1_25
+  - first:
+      213: -8760784925542550513
+    second: Algues-1_26
+  - first:
+      213: -1229453511500168364
+    second: Algues-1_27
+  - first:
+      213: -4303898132363656624
+    second: Algues-1_28
+  - first:
+      213: 6753349554198402563
+    second: Algues-1_29
+  - first:
+      213: -6449738824324884273
+    second: Algues-1_30
+  - first:
+      213: 7400249921192658966
+    second: Algues-1_31
+  - first:
+      213: -1596320697059067047
+    second: Algues-1_32
+  - first:
+      213: -3761062116944190018
+    second: Algues-1_33
+  - first:
+      213: 3546212082372423263
+    second: Algues-1_34
+  - first:
+      213: 6252667424564718535
+    second: Algues-1_35
+  - first:
+      213: 4150937322762836433
+    second: Algues-1_36
+  - first:
+      213: 1205458887521493635
+    second: Algues-1_37
+  - first:
+      213: 2305039317122361463
+    second: Algues-1_38
+  - first:
+      213: -7048867801113169418
+    second: Algues-1_39
+  - first:
+      213: 1300993685427237044
+    second: Algues-1_40
+  - first:
+      213: -8706153014970403762
+    second: Algues-1_41
+  - first:
+      213: 3850861336107109555
+    second: Algues-1_42
+  - first:
+      213: -7957826973269723116
+    second: Algues-1_43
+  - first:
+      213: 1910387153898178111
+    second: Algues-1_44
+  - first:
+      213: -8819392712970888429
+    second: Algues-1_45
+  - first:
+      213: 3014076209911672464
+    second: Algues-1_46
+  - first:
+      213: 2504270176532113456
+    second: Algues-1_47
+  - first:
+      213: -4753737946037769757
+    second: Algues-1_48
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Algues-1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 191
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cc68f4ebd18cb00800000000000000
+      internalID: 848961232974564480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba5a50e3846dd230800000000000000
+      internalID: 3665196189316963005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7e8a97d15fe39c0800000000000000
+      internalID: -3945446716586006549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 191
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522fffec56832ea50800000000000000
+      internalID: 6548858818065855013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 191
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2074192634fade6c0800000000000000
+      internalID: -4112438180768037118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 191
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782a9fcec4161c6a0800000000000000
+      internalID: -6430751809887165817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 191
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bc77873397fef60800000000000000
+      internalID: 8065798719615257493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 159
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c230cfbd4d03720a0800000000000000
+      internalID: -6906497812767440084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 159
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aba89573da9f520800000000000000
+      internalID: 2736408701841357405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 159
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4091ee3e26aaa600800000000000000
+      internalID: 480379027822055503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 159
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7bb2552404174c0800000000000000
+      internalID: -4291578316266424326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 159
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf14c7635378a080800000000000000
+      internalID: -9175957438706999350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 159
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22e81694cb723830800000000000000
+      internalID: 4049435099221516846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 159
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08872a7ee551e4b0800000000000000
+      internalID: -5412950794382637041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85622d0baecfc3fb0800000000000000
+      internalID: -4666577028943567272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 127
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b0a5bd5b3f7ac90800000000000000
+      internalID: -7158485120287372482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 127
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2d3b89b9cbb2150800000000000000
+      internalID: 5848975917538595533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 127
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fab7b785ea3e5e10800000000000000
+      internalID: 2188251226447526646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff883bd282a09670800000000000000
+      internalID: 8543507176029196278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 127
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d6a8c7bac2183b0800000000000000
+      internalID: -5512075353884299966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 127
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5948e86525c4d320800000000000000
+      internalID: 2581905250854652255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc2b10a6030ebc90800000000000000
+      internalID: -7152275831226946351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_22
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 95
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd774a0cd9bb54130800000000000000
+      internalID: 3550450167467767775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_23
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c995c9a9fc6a1e0800000000000000
+      internalID: -2186832306086765562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cc46e0b80230400800000000000000
+      internalID: 289110582695873634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 95
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddff28ff9fa05d20800000000000000
+      internalID: 3265302831442165212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 95
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04707fd6807b6680800000000000000
+      internalID: -8760784925542550513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4530d239b8a10fee0800000000000000
+      internalID: -1229453511500168364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0524ffe937b7544c0800000000000000
+      internalID: -4303898132363656624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_29
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 63
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306d90683a7b8bd50800000000000000
+      internalID: 6753349554198402563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8d11226bced76a0800000000000000
+      internalID: -6449738824324884273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 63
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6180dc95818f2b660800000000000000
+      internalID: 7400249921192658966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_32
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 63
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bb030a8cab8d9e0800000000000000
+      internalID: -1596320697059067047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 63
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5ec5d7ee50ecbc0800000000000000
+      internalID: -3761062116944190018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 63
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ea10ca91da63130800000000000000
+      internalID: 3546212082372423263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb26d305efe5c650800000000000000
+      internalID: 6252667424564718535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 31
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d99030a0871b9930800000000000000
+      internalID: 4150937322762836433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 31
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3826e0ea876aab010800000000000000
+      internalID: 1205458887521493635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_38
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 31
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778236adb052dff10800000000000000
+      internalID: 2305039317122361463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_39
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 31
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1f5f5d4146d2e90800000000000000
+      internalID: -7048867801113169418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_40
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 31
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0baea2dde0e0210800000000000000
+      internalID: 1300993685427237044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_41
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 31
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e443e76c5f78d2780800000000000000
+      internalID: -8706153014970403762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc43f18bf1017530800000000000000
+      internalID: 3850861336107109555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_43
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4187c3ab78e109190800000000000000
+      internalID: -7957826973269723116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_44
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36029baefe038a10800000000000000
+      internalID: 1910387153898178111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b93b00e093b9580800000000000000
+      internalID: -8819392712970888429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_46
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09eadb9f75624d920800000000000000
+      internalID: 3014076209911672464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_47
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0382dc51574f0c220800000000000000
+      internalID: 2504270176532113456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Algues-1_48
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9af134684570eb0800000000000000
+      internalID: -4753737946037769757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
