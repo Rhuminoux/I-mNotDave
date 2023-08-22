@@ -56,5 +56,11 @@ public class PlayerController : MonoBehaviour
     internal void FlipPlayerUp()
     {
         transform.localScale = new Vector3(1, -1, 1);
+        speed = 0;
+    }
+
+    internal void BoostAscent(int bonus)
+    {
+        diveStats.BoostAscent(bonus);
     }
 }

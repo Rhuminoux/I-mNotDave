@@ -87,4 +87,9 @@ public class DiveStats : MonoBehaviour
     {
         m_goingDown = false;
     }
+
+    internal void BoostAscent(int bonus)
+    {
+        m_deepness -= bonus;
+    }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpinningWheel : MonoBehaviour
 {
     
-    [SerializeField] private Transform m_needle;
+    [SerializeField] private RectTransform m_needle;
     [SerializeField] [Range(1,360)]private int m_degreePerSecond = 180;
 
     [Header("TargetAngles")]
@@ -33,13 +33,29 @@ public class SpinningWheel : MonoBehaviour
                 _isBlocked = false;
             }
         }
-        if (Input.GetMouseButton(0))
-            PlayerClicked();
+        if (!_isBlocked && Input.GetMouseButton(0))
+            PlayerClicked(m_needle.eulerAngles.z);
     }
 
-    private void PlayerClicked()
+    private int _bonus = 0;
+    private void PlayerClicked(float rotation)
     {
         _isBlocked = true;
+
+        if (rotation > m_lowBonusRange.first && rotation < m_lowBonusRange.second)
+        {
+            _bonus = 5;
+            if (rotation > m_mediumBonusRange.first && rotation < m_mediumBonusRange.second)
+            {
+                _bonus = 8;
+                if (rotation > m_highBonusRange.first && rotation < m_highBonusRange.second)
+                {
+                    _bonus = 10;
+
+                }
+            }
+            PlayerController.Singleton.BoostAscent(_bonus);
+        }
     }
     #endregion
 }

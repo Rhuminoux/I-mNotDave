@@ -15,6 +15,7 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_goldText;
     [SerializeField] private TextMeshProUGUI m_deepnessText;
     [SerializeField] private Slider m_oxygenUI;
+    [SerializeField] private GameObject m_ascentWheel;
     
 
     public void EscapeKeyPressed()
@@ -40,5 +41,10 @@ public class InGameUIManager : MonoBehaviour
     internal void ActivateDrawnScreen()
     {
         m_drawnUI.SetActive(true);
+    }
+
+    internal void SetAscentWheelActive()
+    {
+        m_ascentWheel.SetActive(true);
     }
 }
