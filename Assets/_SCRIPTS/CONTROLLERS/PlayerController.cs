@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private DiveStats diveStats;
 
     [HideInInspector] public Action onPressEscape;
+    [HideInInspector] public Action onPressSpace;
 
     private float m_xAxis, m_yAxis;
     private Rigidbody2D m_rigidbody2D;
@@ -30,12 +31,13 @@ public class PlayerController : MonoBehaviour
         m_xAxis = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Escape))
             onPressEscape.Invoke();
-        m_rigidbody2D.velocityX = m_xAxis * speed;
+        if (Input.GetKeyDown(KeyCode.Space))
+            onPressSpace.Invoke();
     }
 
     private void FixedUpdate()
     {
-        
+        m_rigidbody2D.velocityX = m_xAxis * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,5 +51,16 @@ public class PlayerController : MonoBehaviour
         {
             diveStats.RemoveOxygen(6);
         }
+    }
+
+    internal void FlipPlayerUp()
+    {
+        transform.localScale = new Vector3(1, -1, 1);
+        speed = 0;
+    }
+
+    internal void BoostAscent(int bonus)
+    {
+        diveStats.BoostAscent(bonus);
     }
 }

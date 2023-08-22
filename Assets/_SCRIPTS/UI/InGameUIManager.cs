@@ -7,10 +7,16 @@ using UnityEngine.UI;
 
 public class InGameUIManager : MonoBehaviour
 {
+    [Header("Menus")]
     [SerializeField] private EscapeMenu m_escapeMenu;
-    [SerializeField] private TextMeshProUGUI m_goldUI;
-    [SerializeField] private Slider m_oxygenUI;
     [SerializeField] private GameObject m_drawnUI;
+
+    [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI m_goldText;
+    [SerializeField] private TextMeshProUGUI m_deepnessText;
+    [SerializeField] private Slider m_oxygenUI;
+    [SerializeField] private GameObject m_ascentWheel;
+    
 
     public void EscapeKeyPressed()
     {
@@ -19,7 +25,12 @@ public class InGameUIManager : MonoBehaviour
 
     internal void GoldChange(int currentGold)
     {
-        m_goldUI.text = currentGold.ToString();
+        m_goldText.text = currentGold.ToString();
+    }
+
+    internal void DeepnessChange(int currentDeepness)
+    {
+        m_deepnessText.text = currentDeepness.ToString() + " m";
     }
 
     internal void OxygenChange(float currentOxygen)
@@ -30,5 +41,10 @@ public class InGameUIManager : MonoBehaviour
     internal void ActivateDrawnScreen()
     {
         m_drawnUI.SetActive(true);
+    }
+
+    internal void SetAscentWheelActive()
+    {
+        m_ascentWheel.SetActive(true);
     }
 }

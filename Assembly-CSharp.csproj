@@ -60,14 +60,15 @@
   <ItemGroup>
     <Compile Include="Assets\_SCRIPTS\UTILS\SceneManagement.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\CreaturesSpawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\MANAGERS\DivingGameManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
-    <Compile Include="Assets\_SCRIPTS\DivingGameManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SharkController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\AudioManager.cs" />
     <Compile Include="Assets\_SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\TreasureSpawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\UTILS\UtilScripts.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\CameraAnchor.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\TreasureController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\MovingObject.cs" />
@@ -80,7 +81,9 @@
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
+    <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\MANAGERS\SpawnerManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
