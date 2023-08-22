@@ -29,7 +29,7 @@ public class InGameUIManager : MonoBehaviour
 
     internal void DeepnessChange(int currentDeepness)
     {
-        m_deepnessText.text = currentDeepness.ToString();
+        m_deepnessText.text = currentDeepness.ToString() + " m";
     }
 
     internal void OxygenChange(float currentOxygen)
