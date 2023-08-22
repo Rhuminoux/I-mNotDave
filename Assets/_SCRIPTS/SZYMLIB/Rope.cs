@@ -29,8 +29,8 @@ public class Rope : MonoBehaviour
 
     private Transform tie1;
     private Transform tie2;
-    private Player1Contoller player1;
-    private Player2Contoller player2;
+    /*private Player1Contoller player1;
+    private Player2Contoller player2;*/
 
     public float maxDistance = 20f;
     public float extraDistance = 5f;
@@ -41,10 +41,10 @@ public class Rope : MonoBehaviour
     private AudioManager audioManager;
 
     private void Awake() {
-        player1 = GameObject.FindObjectOfType<Player1Contoller>();
+        /*player1 = GameObject.FindObjectOfType<Player1Contoller>();
         player2 = GameObject.FindObjectOfType<Player2Contoller>();
         tie1 = player1.transform;
-        tie2 = player2.transform;
+        tie2 = player2.transform;*/
         endPullTime = Time.time;
         audioManager = GameObject.FindObjectOfType<AudioManager>();
     }
@@ -104,6 +104,7 @@ public class Rope : MonoBehaviour
         lineRenderer.SetPositions(positions);
     }
 
+    /*
     private void PullBack(){
         if (!player1.canMove || !player2.canMove)
             return;
@@ -150,13 +151,13 @@ public class Rope : MonoBehaviour
             player2.canMove = true;
             player2.animator.SetBool("Pulled", false);
         }
-    }
+    }*/
 
     private void FixedUpdate() {
         UpdateSegments();
         Draw();
-        PullBack();
-        EndPullBack();
+        //PullBack();
+        //EndPullBack();
     }
 
     public bool CanCatch(Vector2 bug){

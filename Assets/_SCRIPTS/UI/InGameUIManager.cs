@@ -10,6 +10,7 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private EscapeMenu m_escapeMenu;
     [SerializeField] private TextMeshProUGUI m_goldUI;
     [SerializeField] private Slider m_oxygenUI;
+    [SerializeField] private GameObject m_drawnUI;
 
     public void EscapeKeyPressed()
     {
@@ -24,5 +25,10 @@ public class InGameUIManager : MonoBehaviour
     internal void OxygenChange(float currentOxygen)
     {
         m_oxygenUI.value = currentOxygen;
+    }
+
+    internal void ActivateDrawnScreen()
+    {
+        m_drawnUI.SetActive(true);
     }
 }

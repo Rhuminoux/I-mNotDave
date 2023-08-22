@@ -19,5 +19,6 @@ public class CreaturesSpawner : Spawner
     {
         Instantiate(m_objectsToSpawn[0], transform);
         m_timeSinceLastSpawn = 0;
+        GetRandomSpawnFrequency();
     }
 }

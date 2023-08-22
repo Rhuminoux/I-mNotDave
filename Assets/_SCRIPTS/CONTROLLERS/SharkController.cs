@@ -16,13 +16,13 @@ public class SharkController : MovingObject
         if (m_direction.x == -1)
         {
             transform.localScale = new Vector3(-1, 1, 1);
-            m_destination.x = PlayerController.Singleton.transform.position.x - 10;
-            m_spawnPoint.x = PlayerController.Singleton.transform.position.x + 10;
+            m_destination.x = PlayerController.Singleton.transform.position.x - 9;
+            m_spawnPoint.x = PlayerController.Singleton.transform.position.x + 9;
         }
         else
         {
-            m_destination.x = PlayerController.Singleton.transform.position.x + 10;
-            m_spawnPoint.x = PlayerController.Singleton.transform.position.x - 10;
+            m_destination.x = PlayerController.Singleton.transform.position.x + 9;
+            m_spawnPoint.x = PlayerController.Singleton.transform.position.x - 9;
         }
         
 
@@ -50,6 +50,7 @@ public class SharkController : MovingObject
 
     protected override void Move()
     {
-        transform.position += (_movingDirection * speed * Time.fixedDeltaTime) + (Vector3.up * 0.2f);
+        transform.position += (_movingDirection * speed * Time.fixedDeltaTime);
+        transform.position += Vector3.up * Time.fixedDeltaTime * 0.5f;
     }
 }

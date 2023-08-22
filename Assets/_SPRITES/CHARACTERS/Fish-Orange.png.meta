@@ -284,7 +284,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fish-Orange_0: -2196011024617362875
+      Fish-Orange_1: -6417323823407025751
+      Fish-Orange_2: 3295589688235470211
+      Fish-Orange_3: -5632686890575474775
+      Fish-Orange_4: -5795836533496050651
+      Fish-Orange_5: -6966782739855715635
+      Fish-Orange_6: 6624486315689407397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

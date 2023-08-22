@@ -12,6 +12,7 @@ public class DiveStats : MonoBehaviour
 
     public Action<int> onGoldChange;
     public Action<float> onOxygenChange;
+    public Action onDrawn;
 
     private void Awake()
     {
@@ -21,7 +22,14 @@ public class DiveStats : MonoBehaviour
     private void Update()
     {
         m_currentOxygen -= 1 * Time.deltaTime;
+        if (m_currentOxygen < 0)
+            Drawn();
         ChangeOxygen();
+    }
+
+    private void Drawn()
+    {
+        onDrawn.Invoke();
     }
 
     public void AddGold(int goldToAdd)

@@ -23,13 +23,4 @@ public class CameraController : MonoBehaviour
         _smoothedPosition = Vector3.Lerp(transform.position, _desiredPosition, smoothSpeed);
         transform.position = _smoothedPosition;
     }
-
-    public float pixelToUnits = 32f;
-    public float RoundToNearestPixel(float unityUnits)
-    {
-        float valueInPixels = unityUnits * pixelToUnits;
-        valueInPixels = Mathf.Round(valueInPixels);
-        float roundedUnityUnits = valueInPixels * (1 / pixelToUnits);
-        return roundedUnityUnits;
-    }
 }

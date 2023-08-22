@@ -22,5 +22,6 @@ public class TreasureSpawner : Spawner
         _spawnPosition.y = PlayerController.Singleton.transform.position.y - 5.5f;
         Instantiate(m_objectsToSpawn[0], _spawnPosition, Quaternion.identity, transform);
         m_timeSinceLastSpawn = 0;
+        GetRandomSpawnFrequency();
     }
 }

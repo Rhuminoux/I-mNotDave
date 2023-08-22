@@ -60,18 +60,26 @@
   <ItemGroup>
     <Compile Include="Assets\_SCRIPTS\UTILS\SceneManagement.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\CreaturesSpawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
     <Compile Include="Assets\_SCRIPTS\DivingGameManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SharkController.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\AudioManager.cs" />
     <Compile Include="Assets\_SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\TreasureSpawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\CameraAnchor.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\TreasureController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\MovingObject.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\OrderLayerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\Spawner.cs" />
     <Compile Include="Assets\_SCRIPTS\DiveStats.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\PlayerController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\EscapeMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
+    <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />
   </ItemGroup>
   <ItemGroup>

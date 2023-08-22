@@ -15,8 +15,10 @@ public class DivingGameManager : MonoBehaviour
     void Start()
     {
         m_playerController.onPressEscape += OnEscapeKeyPressed;
+
         m_gameStats.onGoldChange += OnGoldChanged;
         m_gameStats.onOxygenChange += OnOxygenChanged;
+        m_gameStats.onDrawn += OnDrawn;
     }
 
     private void OnEscapeKeyPressed()
@@ -33,5 +35,11 @@ public class DivingGameManager : MonoBehaviour
     private void OnOxygenChanged(float currentOxygen)
     {
         m_gameUI.OxygenChange(currentOxygen);
+    }
+
+    private void OnDrawn()
+    {
+        m_gameUI.ActivateDrawnScreen();
+        Time.timeScale = Time.timeScale == 1 ? 0 : 1;
     }
 }
