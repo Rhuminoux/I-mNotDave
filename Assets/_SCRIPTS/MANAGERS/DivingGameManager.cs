@@ -8,8 +8,9 @@ public class DivingGameManager : MonoBehaviour
 {
     [SerializeField] private PlayerController m_playerController;
     [SerializeField] private InGameUIManager m_gameUI;
-    [SerializeField]private DiveStats m_playerStats;
+    [SerializeField] private DiveStats m_diveStats;
     [SerializeField] private SpawnerManager m_spawnerManagers;
+    [SerializeField] private PlayerStats m_playerStats;
 
 
     // Start is called before the first frame update
@@ -18,15 +19,16 @@ public class DivingGameManager : MonoBehaviour
         m_playerController.onPressEscape += OnEscapeKeyPressed;
         m_playerController.onPressSpace += OnSpaceKeyPressed;
 
-        m_playerStats.onGoldChange += OnGoldChanged;
-        m_playerStats.onOxygenChange += OnOxygenChanged;
-        m_playerStats.onDrawn += OnDrawn;
-        m_playerStats.onDeepnessChange += OnDeepnessChange;
+        m_diveStats.onGoldChange += OnGoldChanged;
+        m_diveStats.onOxygenChange += OnOxygenChanged;
+        m_diveStats.onDrawn += OnDrawn;
+        m_diveStats.onDeepnessChange += OnDeepnessChange;
+        m_diveStats.onAscended += OnAscended;
     }
 
     private void StartGoingUp()
     {
-        m_playerStats.StartGoingUp();
+        m_diveStats.StartGoingUp();
         m_playerController.FlipPlayerUp();
         m_spawnerManagers.SetSpawnersActive(false);
         m_gameUI.SetAscentWheelActive();
@@ -42,7 +44,7 @@ public class DivingGameManager : MonoBehaviour
     private void OnEscapeKeyPressed()
     {
         m_gameUI.EscapeKeyPressed();
-        Time.timeScale = Time.timeScale ==  1 ? 0 : 1;
+        Time.timeScale = Time.timeScale == 1 ? 0 : 1;
     }
 
     private void OnGoldChanged(int currentGold)
@@ -64,6 +66,11 @@ public class DivingGameManager : MonoBehaviour
     private void OnDeepnessChange(int deepness)
     {
         m_gameUI.DeepnessChange(deepness);
+    }
+
+    private void OnAscended()
+    {
+
     }
     #endregion
 }

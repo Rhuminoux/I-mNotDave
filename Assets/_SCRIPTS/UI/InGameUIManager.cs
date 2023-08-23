@@ -11,12 +11,15 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] private EscapeMenu m_escapeMenu;
     [SerializeField] private GameObject m_drawnUI;
 
-    [Header("UI Elements")]
+    [Header("In Water Elements")]
     [SerializeField] private TextMeshProUGUI m_goldText;
     [SerializeField] private TextMeshProUGUI m_deepnessText;
     [SerializeField] private Slider m_oxygenUI;
     [SerializeField] private GameObject m_ascentWheel;
-    
+
+    [Header("Out of Water Elements")]
+    [SerializeField] private GameObject m_resume;
+    [SerializeField] private GameObject m_shop;
 
     public void EscapeKeyPressed()
     {
