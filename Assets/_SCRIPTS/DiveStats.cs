@@ -6,18 +6,24 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class DiveStats : MonoBehaviour
 {
-    [SerializeField] private float m_currentOxygen;
     public float maxOxygen;
     public int collectedGold = 0;
 
+    private float m_currentOxygen;
     private bool m_goingDown = true;
-    [SerializeField]private float m_deepness;
+    private bool m_diving = true;
+    private int m_finalDeepness;
+    private int m_suitLevel;
+
+    private float m_deepness;
+
+    public int finalDeepness { get => m_finalDeepness; }
 
     [HideInInspector] public Action<int> onGoldChange;
     [HideInInspector] public Action<float> onOxygenChange;
     [HideInInspector] public Action<int> onDeepnessChange;
     [HideInInspector] public Action onDrawn;
-    [HideInInspector] public Action onAscended;
+    [HideInInspector] public Action onEmerge;
 
     private void Awake()
     {
@@ -26,11 +32,19 @@ public class DiveStats : MonoBehaviour
 
     private void Update()
     {
+        if (!m_diving)
+            return;
         Move();
         m_currentOxygen -= 1 * Time.deltaTime;
         if (m_currentOxygen < 0)
             Drawn();
         ChangeOxygen();
+
+        if (!m_goingDown && m_deepness == 0)
+        {
+            m_diving = false;
+            onEmerge.Invoke();
+        }
     }
 
     private int _intDeepness = 0;
@@ -51,10 +65,7 @@ public class DiveStats : MonoBehaviour
             m_deepness -= 2 * Time.deltaTime;
 
             if (m_deepness <= 0)
-            {
-                onAscended.Invoke();
                 m_deepness = 0;
-            }
 
             if (m_deepness <= _intDeepness - 1)
             {
@@ -89,11 +100,38 @@ public class DiveStats : MonoBehaviour
 
     public void StartGoingUp()
     {
+        m_finalDeepness = (int)Math.Ceiling(m_deepness);
         m_goingDown = false;
     }
 
     internal void BoostAscent(int bonus)
     {
         m_deepness -= bonus;
+    }
+
+    //TODO : Relier au reste des scripts
+    public void StartDiving()
+    {
+        m_diving = true;
+    }
+
+    internal void DiveAgain()
+    {
+        m_currentOxygen = maxOxygen;
+        collectedGold = 0;
+        onGoldChange.Invoke(collectedGold);
+        onOxygenChange.Invoke(m_currentOxygen);
+        m_goingDown = true;
+        m_diving = true;
+    }
+
+    public void UpgradeSuit()
+    {
+        ++m_suitLevel;
+    }
+
+    public void ChangeOxygenBottles(float addedOxygen)
+    {
+        maxOxygen += addedOxygen;
     }
 }

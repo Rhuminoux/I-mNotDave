@@ -62,6 +62,7 @@
     <Compile Include="Assets\_SCRIPTS\SPAWNER\CreaturesSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\DivingGameManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
+    <Compile Include="Assets\_SCRIPTS\UI\ShopUI.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SharkController.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\OrderLayerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\Spawner.cs" />
     <Compile Include="Assets\_SCRIPTS\DiveStats.cs" />
+    <Compile Include="Assets\_SCRIPTS\UI\DiveResumeUI.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\PlayerController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\EscapeMenu.cs" />

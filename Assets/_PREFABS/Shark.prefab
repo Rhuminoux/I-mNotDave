@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d718934c96e70343a97a5ba1e874c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 0.4
   m_spawnPoint: {x: 0, y: 0}
   m_destination: {x: 0, y: 0}
   m_direction: {x: 0, y: 0}
