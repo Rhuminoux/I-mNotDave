@@ -28,8 +28,8 @@ public class DivingGameManager : MonoBehaviour
 
     private void StartGoingUp()
     {
+        m_playerController.GoingUp();
         m_diveStats.StartGoingUp();
-        m_playerController.FlipPlayerUp();
         m_spawnerManagers.SetSpawnersActive(false);
         m_gameUI.SetAscentWheelActive();
         //TODO stop spawners
