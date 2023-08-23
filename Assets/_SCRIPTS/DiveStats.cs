@@ -39,40 +39,29 @@ public class DiveStats : MonoBehaviour
         if (m_currentOxygen < 0)
             Drawn();
         ChangeOxygen();
-
-        if (!m_goingDown && m_deepness == 0)
-        {
-            m_diving = false;
-            onEmerge.Invoke();
-        }
     }
 
     private int _intDeepness = 0;
     private void Move()
     {
+        m_deepness = transform.position.y;
+
+        if (!m_goingDown && m_deepness >= 0)
+        {
+            m_deepness = 0;
+            m_diving = false;
+            onEmerge.Invoke();
+        }
+
         if (m_goingDown)
         {
-            m_deepness += 1 * Time.deltaTime;
-            
-            if (m_deepness > _intDeepness + 1)
-            {
-                _intDeepness = (int)Math.Ceiling(m_deepness) - 1;
-                onDeepnessChange.Invoke(_intDeepness);
-            }
+            _intDeepness = (int)Math.Ceiling(m_deepness) - 1;
+            onDeepnessChange.Invoke(-_intDeepness);
         }
         else
         {
-            m_deepness -= 2 * Time.deltaTime;
-
-            if (m_deepness <= 0)
-                m_deepness = 0;
-
-            if (m_deepness <= _intDeepness - 1)
-            {
-                _intDeepness = (int)Math.Ceiling(m_deepness);
-                onDeepnessChange.Invoke(_intDeepness);
-            }
-
+            _intDeepness = (int)Math.Ceiling(m_deepness);
+            onDeepnessChange.Invoke(-_intDeepness);
         }
     }
 
@@ -100,13 +89,8 @@ public class DiveStats : MonoBehaviour
 
     public void StartGoingUp()
     {
-        m_finalDeepness = (int)Math.Ceiling(m_deepness);
+        m_finalDeepness = (int)Math.Ceiling(m_deepness) - 1;
         m_goingDown = false;
-    }
-
-    internal void BoostAscent(int bonus)
-    {
-        m_deepness -= bonus;
     }
 
     //TODO : Relier au reste des scripts

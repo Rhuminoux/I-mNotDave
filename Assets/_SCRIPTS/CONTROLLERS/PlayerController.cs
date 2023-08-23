@@ -11,9 +11,13 @@ public class PlayerController : MonoBehaviour
 
     private DiveStats m_diveStats;
 
+    
+
     [HideInInspector] public Action onPressEscape;
     [HideInInspector] public Action onPressSpace;
 
+    private bool m_isGoingUp = false;
+    private float m_ascentBoost = 1;
     private float m_xAxis, m_yAxis;
     private Rigidbody2D m_rigidbody2D;
 
@@ -29,15 +33,32 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         m_xAxis = Input.GetAxis("Horizontal");
+        m_yAxis = Input.GetAxis("Vertical");
         if (Input.GetKeyDown(KeyCode.Escape))
             onPressEscape.Invoke();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!m_isGoingUp && Input.GetKeyDown(KeyCode.Space))
             onPressSpace.Invoke();
+        if (m_ascentBoost > 1)
+        {
+            m_ascentBoost -= m_ascentBoost * Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
     {
-        m_rigidbody2D.velocityX = m_xAxis * speed;
+        if (!m_isGoingUp)
+        {
+            m_rigidbody2D.velocityX = m_xAxis * speed;
+            m_rigidbody2D.velocityY = m_yAxis * speed;
+            if (transform.position.y >= 0)
+            {
+                transform.position = new Vector2(transform.position.x, 0);
+            }
+        }
+        else
+        {
+            m_rigidbody2D.velocityY = 1 * speed * m_ascentBoost;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,17 +77,22 @@ public class PlayerController : MonoBehaviour
     internal void FlipPlayerUp()
     {
         transform.localScale = new Vector3(1, -1, 1);
-        speed = 0;
     }
 
     internal void BoostAscent(int bonus)
     {
-        m_diveStats.BoostAscent(bonus);
+        m_ascentBoost = bonus;
     }
 
     public void DiveAgain()
     {
         transform.localScale = new Vector3(1, 1, 1);
+        transform.position = Vector3.down;
         speed = 5;
+    }
+
+    public void GoingUp() {
+        m_isGoingUp = true;
+        FlipPlayerUp();
     }
 }
