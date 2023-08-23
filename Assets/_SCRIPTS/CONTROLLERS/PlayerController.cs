@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private DiveStats m_diveStats;
 
-    
+
 
     [HideInInspector] public Action onPressEscape;
     [HideInInspector] public Action onPressSpace;
@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         if (m_ascentBoost > 1)
         {
             m_ascentBoost -= m_ascentBoost * Time.deltaTime;
+            if (m_ascentBoost < 1)
+                m_ascentBoost = 1;
         }
     }
 
@@ -54,10 +56,38 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x, 0);
             }
+            SetSpriteFlip();
         }
         else
         {
             m_rigidbody2D.velocityY = 1 * speed * m_ascentBoost;
+        }
+    }
+
+    private void SetSpriteFlip()
+    {
+        switch (m_xAxis)
+        {
+            case < 0:
+                if (transform.localScale.x == 1)
+                    transform.localScale = new Vector3(-1, 1, 1);
+                break;
+            case > 0:
+                if (transform.localScale.x == -1)
+                    transform.localScale = new Vector3(1, 1, 1);
+                break;
+        }
+
+        switch (m_yAxis)
+        {
+            case < 0:
+                if (transform.localScale.y == -1)
+                    transform.localScale = new Vector3(1, 1, 1);
+                break;
+            case > 0:
+                if (transform.localScale.y == 1)
+                    transform.localScale = new Vector3(1, -1, 1);
+                break;
         }
     }
 
@@ -86,12 +116,14 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
+        m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
         speed = 5;
     }
 
-    public void GoingUp() {
+    public void GoingUp()
+    {
         m_isGoingUp = true;
         FlipPlayerUp();
     }
