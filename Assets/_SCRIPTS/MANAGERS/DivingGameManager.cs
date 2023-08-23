@@ -22,6 +22,7 @@ public class DivingGameManager : MonoBehaviour
         m_playerStats.onOxygenChange += OnOxygenChanged;
         m_playerStats.onDrawn += OnDrawn;
         m_playerStats.onDeepnessChange += OnDeepnessChange;
+        m_playerStats.onAscended += OnAscended;
     }
 
     private void StartGoingUp()
@@ -64,6 +65,11 @@ public class DivingGameManager : MonoBehaviour
     private void OnDeepnessChange(int deepness)
     {
         m_gameUI.DeepnessChange(deepness);
+    }
+
+    private void OnAscended()
+    {
+    
     }
     #endregion
 }

@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int chest;
+    public int deepnessRecord;
 
-    // Update is called once per frame
-    void Update()
+    public void AddMoneyToChess(int money)
     {
-        
+        chest += money;
     }
 }

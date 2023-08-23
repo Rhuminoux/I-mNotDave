@@ -17,6 +17,7 @@ public class DiveStats : MonoBehaviour
     [HideInInspector] public Action<float> onOxygenChange;
     [HideInInspector] public Action<int> onDeepnessChange;
     [HideInInspector] public Action onDrawn;
+    [HideInInspector] public Action onAscended;
 
     private void Awake()
     {
@@ -48,9 +49,12 @@ public class DiveStats : MonoBehaviour
         else
         {
             m_deepness -= 2 * Time.deltaTime;
-            
+
             if (m_deepness <= 0)
+            {
+                onAscended.Invoke();
                 m_deepness = 0;
+            }
 
             if (m_deepness <= _intDeepness - 1)
             {
