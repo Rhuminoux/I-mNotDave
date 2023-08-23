@@ -23,4 +23,5 @@ public class CameraController : MonoBehaviour
         _smoothedPosition = Vector3.Lerp(transform.position, _desiredPosition, smoothSpeed);
         transform.position = _smoothedPosition;
     }
+
 }
