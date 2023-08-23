@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int chest;
+    public int chestMoney;
     public int deepnessRecord;
 
     public void AddMoneyToChess(int money)
     {
-        chest += money;
+        chestMoney += money;
     }
 }

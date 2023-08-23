@@ -23,7 +23,7 @@ public class DivingGameManager : MonoBehaviour
         m_diveStats.onOxygenChange += OnOxygenChanged;
         m_diveStats.onDrawn += OnDrawn;
         m_diveStats.onDeepnessChange += OnDeepnessChange;
-        m_diveStats.onAscended += OnAscended;
+        m_diveStats.onEmerge += OnEmerge;
     }
 
     private void StartGoingUp()
@@ -68,9 +68,38 @@ public class DivingGameManager : MonoBehaviour
         m_gameUI.DeepnessChange(deepness);
     }
 
-    private void OnAscended()
+    private void OnEmerge()
     {
+        m_playerStats.AddMoneyToChess(m_diveStats.collectedGold);
+        m_gameUI.Emerge(m_diveStats, m_playerStats);
+    }
 
+    public void Dive()
+    {
+        m_gameUI.DiveAgain();
+        m_diveStats.DiveAgain();
+        m_playerController.DiveAgain();
+        m_spawnerManagers.SetSpawnersActive(true);
+    }
+
+    public void UpgradeSuit(int price)
+    {
+        if (price < m_playerStats.chestMoney)
+        {
+            m_playerStats.chestMoney -= price;
+            m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
+            m_diveStats.UpgradeSuit();
+        }
+    }
+
+    public void UpgradeOxygenBottles(int price)
+    {
+        if (price < m_playerStats.chestMoney)
+        {
+            m_playerStats.chestMoney -= price;
+            m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
+            m_diveStats.ChangeOxygenBottles(30);
+        }
     }
     #endregion
 }

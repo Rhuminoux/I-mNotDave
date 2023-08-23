@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Singleton;
 
-    public float speed = 1; //can be changed by an upgrade
+    public float speed = 5; //can be changed by an upgrade
 
-    [SerializeField] private DiveStats diveStats;
+    private DiveStats m_diveStats;
 
     [HideInInspector] public Action onPressEscape;
     [HideInInspector] public Action onPressSpace;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
             Destroy(this);
         Singleton = this;
         m_rigidbody2D = GetComponent<Rigidbody2D>();
-        diveStats = GetComponent<DiveStats>();
+        m_diveStats = GetComponent<DiveStats>();
     }
     // Update is called once per frame
     void Update()
@@ -45,11 +45,11 @@ public class PlayerController : MonoBehaviour
         if (1 << collision.gameObject.layer == LayerMask.GetMask("Collectible"))
         {
             Destroy(collision.gameObject);
-            diveStats.AddGold(collision.gameObject.GetComponent<TreasureController>().value);
+            m_diveStats.AddGold(collision.gameObject.GetComponent<TreasureController>().value);
         }
         if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
-            diveStats.RemoveOxygen(6);
+            m_diveStats.RemoveOxygen(6);
         }
     }
 
@@ -61,6 +61,12 @@ public class PlayerController : MonoBehaviour
 
     internal void BoostAscent(int bonus)
     {
-        diveStats.BoostAscent(bonus);
+        m_diveStats.BoostAscent(bonus);
+    }
+
+    public void DiveAgain()
+    {
+        transform.localScale = new Vector3(1, 1, 1);
+        speed = 5;
     }
 }
