@@ -37,7 +37,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             onPressEscape.Invoke();
         if (!m_isGoingUp && Input.GetKeyDown(KeyCode.Space))
-            onPressSpace.Invoke();
+        {
+            RaycastHit2D rh = Physics2D.Raycast(transform.position, Vector2.up, Mathf.Infinity, LayerMask.GetMask("Ground"));
+            if (rh.collider == null)
+                onPressSpace.Invoke();
+        }
         if (m_ascentBoost > 1)
         {
             m_ascentBoost -= m_ascentBoost * Time.deltaTime;
