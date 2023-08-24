@@ -24,6 +24,7 @@ public class DivingGameManager : MonoBehaviour
         m_diveStats.onDrawn += OnDrawn;
         m_diveStats.onDeepnessChange += OnDeepnessChange;
         m_diveStats.onEmerge += OnEmerge;
+        m_diveStats.onChangeArea += OnChangeArea;
     }
 
     private void StartGoingUp()
@@ -102,6 +103,38 @@ public class DivingGameManager : MonoBehaviour
             m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
             m_diveStats.ChangeOxygenBottles(30);
         }
+    }
+
+    private void OnChangeArea(AreaEntrance.AREATYPE areaType)
+    {
+        m_spawnerManagers.SetNewArea((int)areaType);
+        _changingColor = false;
+        switch (areaType) {
+            case AreaEntrance.AREATYPE.SURFACE:
+                StartCoroutine(ChangeBackgroundColor(Camera.main.backgroundColor, (Color)new Color32(80, 185 ,235, 0), 2, 1));
+                break;
+            case AreaEntrance.AREATYPE.CAVE:
+                StartCoroutine(ChangeBackgroundColor(Camera.main.backgroundColor, (Color)new Color32(35, 75, 94, 0), 2, 1));
+                break;
+        }
+    }
+
+    private bool _changingColor = false;
+    IEnumerator ChangeBackgroundColor(Color fromColor, Color toColor, float duration, int durationEachPass)
+    {
+        if (_changingColor)
+        {
+            yield break;
+        }
+        _changingColor = true;
+        for (float t = 0.0f; t < duration; t += Time.deltaTime)
+        {
+            Camera.main.backgroundColor = Color.Lerp(fromColor, toColor, t);
+
+            //Wait for a frame
+            yield return null;
+        }
+        _changingColor = false;
     }
     #endregion
 }

@@ -12,7 +12,7 @@ public class SharkController : MovingObject
     {
         
         m_spawnPoint.y = PlayerController.Singleton.transform.position.y - 5;
-        m_spawnPoint.x = Random.Range(PlayerController.Singleton.transform.position.y - 8, PlayerController.Singleton.transform.position.y + 8);
+        m_spawnPoint.x = Random.Range(PlayerController.Singleton.transform.position.x - 8, PlayerController.Singleton.transform.position.x + 8);
 
         transform.position = m_spawnPoint;
 

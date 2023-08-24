@@ -64,7 +64,9 @@
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\ShopUI.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
+    <Compile Include="Assets\_SCRIPTS\EnemyLists\CreaturesList.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
+    <Compile Include="Assets\_SCRIPTS\AreaEntrance.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SharkController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\AudioManager.cs" />
     <Compile Include="Assets\_SCRIPTS\PlayerStats.cs" />
@@ -769,11 +771,11 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
