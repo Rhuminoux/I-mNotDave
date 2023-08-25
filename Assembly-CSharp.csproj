@@ -82,7 +82,6 @@
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\PlayerController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\EscapeMenu.cs" />
-    <Compile Include="Assets\_SCRIPTS\SZYMLIB\OptionManager.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
