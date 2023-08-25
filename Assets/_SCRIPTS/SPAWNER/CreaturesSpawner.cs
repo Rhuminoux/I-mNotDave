@@ -17,7 +17,7 @@ public class CreaturesSpawner : Spawner
 
     protected override void SpawnObject()
     {
-        Instantiate(m_creaturesList.GetCreature(), transform);
+        Instantiate(m_objectsToSpawn[0], transform);
         m_timeSinceLastSpawn = 0;
         GetRandomSpawnFrequency();
     }

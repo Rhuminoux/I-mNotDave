@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreasureSpawner : Spawner
 {
-    [SerializeField] private List<GameObject> m_objectsToSpawn;
+
     // Update is called once per frame
     void Update()
     {

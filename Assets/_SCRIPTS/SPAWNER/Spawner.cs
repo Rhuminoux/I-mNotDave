@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Spawner : MonoBehaviour
 {
-    [SerializeField] protected CreaturesList m_creaturesList;
+    [SerializeField]protected List<GameObject> m_objectsToSpawn =  new List<GameObject>();
     [SerializeField] protected float m_spawnFrequencyMin = 5.0f, m_spawnFrequencyMax = 10.0f, m_spawnFrequency;
     [SerializeField] protected float m_timeSinceLastSpawn;
 
@@ -16,11 +16,6 @@ public abstract class Spawner : MonoBehaviour
     protected void GetRandomSpawnFrequency()
     {
         m_spawnFrequency = Random.Range(m_spawnFrequencyMin, m_spawnFrequencyMax);
-    }
-
-    public void SetCreaturesList(CreaturesList list)
-    {
-        m_creaturesList = list;
     }
     protected abstract void SpawnObject();
 }

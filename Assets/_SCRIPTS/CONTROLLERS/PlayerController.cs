@@ -98,23 +98,9 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             m_diveStats.AddGold(collision.gameObject.GetComponent<TreasureController>().value);
         }
-        else if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
+        if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
             m_diveStats.RemoveOxygen(6);
-        }
-    }
-
-    /// OnTriggerExit2D
-    /// 
-    /// Je change l'area dans le OnTrigger exit pour eviter que le joueur ne se retourne alors qu'il est toujours dans le trigger
-    /// Sinon il pourrait juste déclencher le trigger de la zonne, se retourner et continuer à jouer dans la zonne normale avec un autre setting
-    /// 
-    /// <param name="collision"></param>
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (1 << collision.gameObject.layer == LayerMask.GetMask("Entrance"))
-        {
-            m_diveStats.ChangeCurrentArea(collision.GetComponent<AreaEntrance>().areType);
         }
     }
 

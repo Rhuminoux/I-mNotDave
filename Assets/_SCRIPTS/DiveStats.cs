@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
-using static AreaEntrance;
 
 public class DiveStats : MonoBehaviour
 {
@@ -15,7 +14,6 @@ public class DiveStats : MonoBehaviour
     private bool m_diving = true;
     private int m_finalDeepness;
     private int m_suitLevel;
-    private AREATYPE m_currentArea;
 
     private float m_deepness;
 
@@ -24,7 +22,6 @@ public class DiveStats : MonoBehaviour
     [HideInInspector] public Action<int> onGoldChange;
     [HideInInspector] public Action<float> onOxygenChange;
     [HideInInspector] public Action<int> onDeepnessChange;
-    [HideInInspector] public Action<AREATYPE> onChangeArea;
     [HideInInspector] public Action onDrawn;
     [HideInInspector] public Action onEmerge;
 
@@ -120,14 +117,5 @@ public class DiveStats : MonoBehaviour
     public void ChangeOxygenBottles(float addedOxygen)
     {
         maxOxygen += addedOxygen;
-    }
-
-    public void ChangeCurrentArea(AREATYPE newArea)
-    {
-        if (newArea == m_currentArea) // si on est déjà dans cette zonne alors c'est qu'on la quitte
-            m_currentArea = AREATYPE.SURFACE;
-        else //Sinon on entre dans cette zone
-            m_currentArea = newArea;
-         onChangeArea.Invoke(m_currentArea);
     }
 }
