@@ -25,9 +25,6 @@ public class DivingGameManager : MonoBehaviour
         m_diveStats.onDeepnessChange += OnDeepnessChange;
         m_diveStats.onEmerge += OnEmerge;
         m_diveStats.onChangeArea += OnChangeArea;
-
-        Dive();
-        m_diveStats.SetNewSuit(0);
     }
 
     private void StartGoingUp()
@@ -90,14 +87,11 @@ public class DivingGameManager : MonoBehaviour
 
     public void UpgradeSuit(int price)
     {
-
         if (price < m_playerStats.chestMoney)
         {
-            if (m_diveStats.UpgradeSuit())
-            {
-                m_playerStats.chestMoney -= price;
-                m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
-            }
+            m_playerStats.chestMoney -= price;
+            m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
+            m_diveStats.UpgradeSuit();
         }
     }
 
