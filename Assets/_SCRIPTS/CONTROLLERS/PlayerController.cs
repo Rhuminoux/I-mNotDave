@@ -37,7 +37,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             onPressEscape.Invoke();
         if (!m_isGoingUp && Input.GetKeyDown(KeyCode.Space))
-            onPressSpace.Invoke();
+        {
+            RaycastHit2D rh = Physics2D.Raycast(transform.position, Vector2.up, Mathf.Infinity, LayerMask.GetMask("Ground"));
+            if (rh.collider == null)
+                onPressSpace.Invoke();
+        }
         if (m_ascentBoost > 1)
         {
             m_ascentBoost -= m_ascentBoost * Time.deltaTime;
@@ -70,11 +74,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.x == 1)
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(-1, transform.localScale.y, 1);
                 break;
             case > 0:
                 if (transform.localScale.x == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(1, transform.localScale.y, 1);
                 break;
         }
 
@@ -82,11 +86,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.y == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(transform.localScale.x, 1, 1);
                 break;
             case > 0:
                 if (transform.localScale.y == 1)
-                    transform.localScale = new Vector3(1, -1, 1);
+                    transform.localScale = new Vector3(transform.localScale.x, -1, 1);
                 break;
         }
     }
@@ -130,6 +134,7 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
+        m_ascentBoost = 0;
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
