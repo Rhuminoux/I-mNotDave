@@ -63,6 +63,7 @@
     <Compile Include="Assets\_SCRIPTS\MANAGERS\DivingGameManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\ShopUI.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CoinController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
     <Compile Include="Assets\_SCRIPTS\EnemyLists\CreaturesList.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
@@ -76,18 +77,24 @@
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\TreasureController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\MovingObject.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\OrderLayerManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\SPAWNER\ChestSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\Spawner.cs" />
     <Compile Include="Assets\_SCRIPTS\DiveStats.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DiveResumeUI.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\PlayerController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\EscapeMenu.cs" />
+    <Compile Include="Assets\_SCRIPTS\DiverBodyPart.cs" />
+    <Compile Include="Assets\_SCRIPTS\SZYMLIB\OptionManager.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
+    <Compile Include="Assets\_SCRIPTS\EQUIPEMENT\SwimsuitSO.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />
+    <Compile Include="Assets\_SCRIPTS\BodyPartManager.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\SpawnerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\ChestController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CursorController.cs" />
   </ItemGroup>
   <ItemGroup>
