@@ -14,30 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwimsuitLevel: 0
   legSprites:
-  - {fileID: 4158479877657383339, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: 7398550871092307156, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: -1571279241654085692, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: 5675411012913205501, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: -2943069934844399346, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
+  - {fileID: 7353114426465298156, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5029392915139540660, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 939180428670755608, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -1708104553978874552, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 5117694564431846622, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5244225313194243206, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5389996737015095946, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 4992757373517491477, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 8659798613820867177, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5451618073129087323, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -784923115801351980, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -2363538688400758804, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 8736318677785800354, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 1541189485146527032, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 3401381558386826058, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
   armSprites:
   - {fileID: 1553330096772576967, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
   - {fileID: -2126597059, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
   mouthSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1363419849112118149, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
+  - {fileID: 2340383373546688413, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
   lightSprites:
   - {fileID: 0}
   - {fileID: 0}
   lampSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2302143968610687073, guid: ee61b1f5f8d9ea74384dacf1b757da7b, type: 3}
+  - {fileID: -2967184790362381397, guid: ee61b1f5f8d9ea74384dacf1b757da7b, type: 3}
   headSprites:
   - {fileID: -4407147980825112282, guid: b89e0384487652449bb534f03d3780a9, type: 3}
   - {fileID: 6596364355237560675, guid: b89e0384487652449bb534f03d3780a9, type: 3}
   backSprites:
   - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
-  - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
-  - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
+  - {fileID: -1026894493, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
+  - {fileID: 641424892, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
   trunkSprites:
   - {fileID: -5218269537229293453, guid: 62aebf034a61bac42b346c9ce264ac86, type: 3}
   - {fileID: 2120225148091003014, guid: 62aebf034a61bac42b346c9ce264ac86, type: 3}
