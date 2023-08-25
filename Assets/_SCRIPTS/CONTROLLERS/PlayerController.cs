@@ -95,8 +95,8 @@ public class PlayerController : MonoBehaviour
     {
         if (1 << collision.gameObject.layer == LayerMask.GetMask("Collectible"))
         {
-            Destroy(collision.gameObject);
             m_diveStats.AddGold(collision.gameObject.GetComponent<TreasureController>().value);
+            collision.gameObject.GetComponent<TreasureController>().DestroyTreasure();
         }
         else if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
@@ -133,11 +133,11 @@ public class PlayerController : MonoBehaviour
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
-        speed = 5;
     }
 
     public void GoingUp()
     {
+        m_rigidbody2D.velocityX = 0;
         m_isGoingUp = true;
         FlipPlayerUp();
     }

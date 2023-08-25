@@ -9,6 +9,7 @@ public class DiveStats : MonoBehaviour
 {
     public float maxOxygen;
     public int collectedGold = 0;
+    [SerializeField] private BodyPartManager m_bodyPartManager;
 
     private float m_currentOxygen;
     private bool m_goingDown = true;
@@ -75,6 +76,7 @@ public class DiveStats : MonoBehaviour
 
     public void AddGold(int goldToAdd)
     {
+        goldToAdd *= (int)(transform.position.y * -1) / 10;
         collectedGold += goldToAdd;
         onGoldChange.Invoke(collectedGold);
     }
@@ -112,9 +114,20 @@ public class DiveStats : MonoBehaviour
         m_diving = true;
     }
 
-    public void UpgradeSuit()
+    public bool UpgradeSuit()
     {
-        ++m_suitLevel;
+        if (m_suitLevel < 7)
+        {
+            ++m_suitLevel;
+            SetNewSuit(m_suitLevel);
+            return true;
+        }
+        return false;
+    }
+
+    public void SetNewSuit(int suitLevel)
+    {
+        m_bodyPartManager.SetNewSuit(suitLevel);
     }
 
     public void ChangeOxygenBottles(float addedOxygen)
