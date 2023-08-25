@@ -70,11 +70,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.x == 1)
-                    transform.localScale = new Vector3(-1, transform.localScale.y, 1);
+                    transform.localScale = new Vector3(-1, 1, 1);
                 break;
             case > 0:
                 if (transform.localScale.x == -1)
-                    transform.localScale = new Vector3(1, transform.localScale.y, 1);
+                    transform.localScale = new Vector3(1, 1, 1);
                 break;
         }
 
@@ -82,11 +82,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.y == -1)
-                    transform.localScale = new Vector3(transform.localScale.x, 1, 1);
+                    transform.localScale = new Vector3(1, 1, 1);
                 break;
             case > 0:
                 if (transform.localScale.y == 1)
-                    transform.localScale = new Vector3(transform.localScale.x, -1, 1);
+                    transform.localScale = new Vector3(1, -1, 1);
                 break;
         }
     }
@@ -95,12 +95,26 @@ public class PlayerController : MonoBehaviour
     {
         if (1 << collision.gameObject.layer == LayerMask.GetMask("Collectible"))
         {
-            Destroy(collision.gameObject);
             m_diveStats.AddGold(collision.gameObject.GetComponent<TreasureController>().value);
+            collision.gameObject.GetComponent<TreasureController>().DestroyTreasure();
         }
-        if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
+        else if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
             m_diveStats.RemoveOxygen(6);
+        }
+    }
+
+    /// OnTriggerExit2D
+    /// 
+    /// Je change l'area dans le OnTrigger exit pour eviter que le joueur ne se retourne alors qu'il est toujours dans le trigger
+    /// Sinon il pourrait juste déclencher le trigger de la zonne, se retourner et continuer à jouer dans la zonne normale avec un autre setting
+    /// 
+    /// <param name="collision"></param>
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (1 << collision.gameObject.layer == LayerMask.GetMask("Entrance"))
+        {
+            m_diveStats.ChangeCurrentArea(collision.GetComponent<AreaEntrance>().areType);
         }
     }
 
@@ -116,7 +130,6 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
-        m_ascentBoost = 0;
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
@@ -124,6 +137,7 @@ public class PlayerController : MonoBehaviour
 
     public void GoingUp()
     {
+        m_rigidbody2D.velocityX = 0;
         m_isGoingUp = true;
         FlipPlayerUp();
     }

@@ -3,17 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
+using static AreaEntrance;
 
 public class DiveStats : MonoBehaviour
 {
     public float maxOxygen;
     public int collectedGold = 0;
+    [SerializeField] private BodyPartManager m_bodyPartManager;
 
     private float m_currentOxygen;
     private bool m_goingDown = true;
     private bool m_diving = true;
     private int m_finalDeepness;
     private int m_suitLevel;
+    private AREATYPE m_currentArea;
 
     private float m_deepness;
 
@@ -22,6 +25,7 @@ public class DiveStats : MonoBehaviour
     [HideInInspector] public Action<int> onGoldChange;
     [HideInInspector] public Action<float> onOxygenChange;
     [HideInInspector] public Action<int> onDeepnessChange;
+    [HideInInspector] public Action<AREATYPE> onChangeArea;
     [HideInInspector] public Action onDrawn;
     [HideInInspector] public Action onEmerge;
 
@@ -72,6 +76,7 @@ public class DiveStats : MonoBehaviour
 
     public void AddGold(int goldToAdd)
     {
+        goldToAdd *= (int)(transform.position.y * -1) / 10;
         collectedGold += goldToAdd;
         onGoldChange.Invoke(collectedGold);
     }
@@ -109,13 +114,33 @@ public class DiveStats : MonoBehaviour
         m_diving = true;
     }
 
-    public void UpgradeSuit()
+    public bool UpgradeSuit()
     {
-        ++m_suitLevel;
+        if (m_suitLevel < 7)
+        {
+            ++m_suitLevel;
+            SetNewSuit(m_suitLevel);
+            return true;
+        }
+        return false;
+    }
+
+    public void SetNewSuit(int suitLevel)
+    {
+        m_bodyPartManager.SetNewSuit(suitLevel);
     }
 
     public void ChangeOxygenBottles(float addedOxygen)
     {
         maxOxygen += addedOxygen;
+    }
+
+    public void ChangeCurrentArea(AREATYPE newArea)
+    {
+        if (newArea == m_currentArea) // si on est déjà dans cette zonne alors c'est qu'on la quitte
+            m_currentArea = AREATYPE.SURFACE;
+        else //Sinon on entre dans cette zone
+            m_currentArea = newArea;
+         onChangeArea.Invoke(m_currentArea);
     }
 }

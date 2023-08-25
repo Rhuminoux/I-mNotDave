@@ -63,29 +63,38 @@
     <Compile Include="Assets\_SCRIPTS\MANAGERS\DivingGameManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\ShopUI.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CoinController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Rope.cs" />
+    <Compile Include="Assets\_SCRIPTS\EnemyLists\CreaturesList.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\SpriteReplacer.cs" />
+    <Compile Include="Assets\_SCRIPTS\AreaEntrance.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SharkController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\AudioManager.cs" />
     <Compile Include="Assets\_SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\TreasureSpawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SwordFishController.cs" />
     <Compile Include="Assets\_SCRIPTS\UTILS\UtilScripts.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\CameraAnchor.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\TreasureController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\MovingObject.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\OrderLayerManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\SPAWNER\ChestSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\Spawner.cs" />
     <Compile Include="Assets\_SCRIPTS\DiveStats.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DiveResumeUI.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\PlayerController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\EscapeMenu.cs" />
+    <Compile Include="Assets\_SCRIPTS\DiverBodyPart.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
+    <Compile Include="Assets\_SCRIPTS\EQUIPEMENT\SwimsuitSO.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />
+    <Compile Include="Assets\_SCRIPTS\BodyPartManager.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\SpawnerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\ChestController.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CursorController.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -769,11 +778,11 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
