@@ -122,10 +122,52 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4ea661ed0fa18810800000000000000
+      spriteID: 81076100fbfbf2b468140f71d676890c
       internalID: 1765885003056983630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diver-Back-None-ArmDown_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0f20308afa48f4b97902e142ae36d3
+      internalID: -1026894493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diver-Back-None-ArmDown_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a59fcd42b441046b8e35221709c998
+      internalID: 641424892
       vertices: []
       indices: 
       edges: []
@@ -142,6 +184,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Diver-Back-None-ArmDown_0: 1765885003056983630
+      Diver-Back-None-ArmDown_1: -1026894493
+      Diver-Back-None-ArmDown_2: 641424892
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

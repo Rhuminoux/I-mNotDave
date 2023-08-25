@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dead-Squid_0: -4296562658675653280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

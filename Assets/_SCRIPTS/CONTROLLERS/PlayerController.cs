@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private float m_ascentBoost = 1;
     private float m_xAxis, m_yAxis;
     private Rigidbody2D m_rigidbody2D;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         Singleton = this;
         m_rigidbody2D = GetComponent<Rigidbody2D>();
         m_diveStats = GetComponent<DiveStats>();
+        animator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -66,29 +68,15 @@ public class PlayerController : MonoBehaviour
 
     private void SetSpriteFlip()
     {
-        switch (m_xAxis)
-        {
-            case < 0:
-                if (transform.localScale.x == 1)
-                    transform.localScale = new Vector3(-1, 1, 1);
-                break;
-            case > 0:
-                if (transform.localScale.x == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
-                break;
+        animator.SetBool("Turning", m_xAxis != 0);
+        Vector3 newScale = new Vector3(1, 1, 1);
+        if (m_xAxis > 0){
+            newScale.x = -1;
         }
-
-        switch (m_yAxis)
-        {
-            case < 0:
-                if (transform.localScale.y == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
-                break;
-            case > 0:
-                if (transform.localScale.y == 1)
-                    transform.localScale = new Vector3(1, -1, 1);
-                break;
+        if (m_yAxis > 0 ){
+            newScale.y = -1;
         }
+        transform.localScale = newScale;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -101,13 +89,14 @@ public class PlayerController : MonoBehaviour
         else if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
             m_diveStats.RemoveOxygen(6);
+            animator.SetTrigger("Hurt");
         }
     }
 
     /// OnTriggerExit2D
     /// 
     /// Je change l'area dans le OnTrigger exit pour eviter que le joueur ne se retourne alors qu'il est toujours dans le trigger
-    /// Sinon il pourrait juste déclencher le trigger de la zonne, se retourner et continuer à jouer dans la zonne normale avec un autre setting
+    /// Sinon il pourrait juste dï¿½clencher le trigger de la zonne, se retourner et continuer ï¿½ jouer dans la zonne normale avec un autre setting
     /// 
     /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
