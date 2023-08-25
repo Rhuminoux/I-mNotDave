@@ -9,6 +9,6 @@ public class CreaturesList : ScriptableObject
 
     public GameObject GetCreature()
     {
-        return m_creaturesList[Random.Range(0, m_creaturesList.Count)];
+        return m_creaturesList[Random.Range(0, m_creaturesList.Count - 1)];
     }
 }

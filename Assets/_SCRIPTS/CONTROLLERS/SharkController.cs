@@ -16,8 +16,8 @@ public class SharkController : MovingObject
 
         transform.position = m_spawnPoint;
 
-        _movingDirection = (PlayerController.Singleton.transform.position - transform.position).normalized;
-        if (PlayerController.Singleton.transform.position.x < transform.position.x)
+        _movingDirection = PlayerController.Singleton.transform.position - transform.position;
+        if (_movingDirection.x < transform.position.x)
             transform.localScale = new Vector3(-1, 1, 1);
     }
     

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: CaveEnemies
   m_EditorClassIdentifier: 
   m_creaturesList:
-  - {fileID: 139521871459547293, guid: 2a0b2a7354a666e43999c70a750522f5, type: 3}
-  - {fileID: 2426365555961441424, guid: 5eeafa3328d87704bafd8dc3f2598a9d, type: 3}
+  - {fileID: 2490346259786172910, guid: 349b43843270684468e4c1c1c6011bd1, type: 3}

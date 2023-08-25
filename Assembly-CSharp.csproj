@@ -71,7 +71,6 @@
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\AudioManager.cs" />
     <Compile Include="Assets\_SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\TreasureSpawner.cs" />
-    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\SwordFishController.cs" />
     <Compile Include="Assets\_SCRIPTS\UTILS\UtilScripts.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\CameraAnchor.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\TreasureController.cs" />
