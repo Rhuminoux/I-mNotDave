@@ -70,11 +70,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.x == 1)
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(-1, transform.localScale.y, 1);
                 break;
             case > 0:
                 if (transform.localScale.x == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(1, transform.localScale.y, 1);
                 break;
         }
 
@@ -82,11 +82,11 @@ public class PlayerController : MonoBehaviour
         {
             case < 0:
                 if (transform.localScale.y == -1)
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(transform.localScale.x, 1, 1);
                 break;
             case > 0:
                 if (transform.localScale.y == 1)
-                    transform.localScale = new Vector3(1, -1, 1);
+                    transform.localScale = new Vector3(transform.localScale.x, -1, 1);
                 break;
         }
     }
@@ -130,10 +130,10 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
+        m_ascentBoost = 0;
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
-        speed = 5;
     }
 
     public void GoingUp()
