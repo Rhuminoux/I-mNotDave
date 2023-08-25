@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_creaturesList:
   - {fileID: 2490346259786172910, guid: 349b43843270684468e4c1c1c6011bd1, type: 3}
+  - {fileID: 2490346259786172910, guid: 349b43843270684468e4c1c1c6011bd1, type: 3}
