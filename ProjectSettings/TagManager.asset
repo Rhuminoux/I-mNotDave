@@ -44,11 +44,14 @@ TagManager:
   - name: BackGroundFx
     uniqueID: 1697799655
     locked: 0
-  - name: Decorations
-    uniqueID: 354432237
-    locked: 0
   - name: Tiles
     uniqueID: 3975393067
+    locked: 0
+  - name: BackDecoration
+    uniqueID: 354432237
+    locked: 0
+  - name: FrontDecoration
+    uniqueID: 2283467513
     locked: 0
   - name: Player
     uniqueID: 3281711835
