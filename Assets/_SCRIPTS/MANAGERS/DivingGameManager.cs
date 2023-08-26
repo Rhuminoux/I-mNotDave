@@ -75,7 +75,7 @@ public class DivingGameManager : MonoBehaviour
     private void OnEmerge()
     {
         Time.timeScale = 0;
-        m_playerStats.AddMoneyToChess(m_diveStats.collectedGold);
+        m_playerStats.AddMoneyToChess(m_diveStats.collectedGold + m_diveStats.fishGold);
         m_gameUI.Emerge(m_diveStats, m_playerStats);
     }
 

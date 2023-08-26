@@ -82,6 +82,7 @@
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\OrderLayerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\ChestSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\Spawner.cs" />
+    <Compile Include="Assets\_SCRIPTS\SHOP\ShopArticleSO.cs" />
     <Compile Include="Assets\_SCRIPTS\DiveStats.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DiveResumeUI.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CameraController.cs" />
@@ -90,6 +91,8 @@
     <Compile Include="Assets\_SCRIPTS\DiverBodyPart.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
+    <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CollectibleFishController.cs" />
+    <Compile Include="Assets\_SCRIPTS\CollectibleFish\CollectibleFishSO.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
     <Compile Include="Assets\_SCRIPTS\EQUIPEMENT\SwimsuitSO.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />

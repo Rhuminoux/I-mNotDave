@@ -9,7 +9,9 @@ public class DiveStats : MonoBehaviour
 {
     public float maxOxygen;
     public int collectedGold = 0;
+    public int fishGold = 0;
     [SerializeField] private BodyPartManager m_bodyPartManager;
+    [SerializeField] private HarpoonRifleController m_harpoonRifleController;
 
     private float m_currentOxygen;
     private bool m_goingDown = true;
@@ -32,6 +34,16 @@ public class DiveStats : MonoBehaviour
     private void Awake()
     {
         m_currentOxygen = maxOxygen;
+    }
+
+    private void Start()
+    {
+        m_harpoonRifleController.onFishCatched += FishCatched;
+    }
+
+    private void FishCatched(CollectibleFishController fishController)
+    {
+        fishGold += fishController.fishValue;
     }
 
     private void Update()
@@ -94,18 +106,14 @@ public class DiveStats : MonoBehaviour
 
     public void StartGoingUp()
     {
+        m_harpoonRifleController.enabled = false;
         m_finalDeepness = (int)Math.Ceiling(m_deepness) - 1;
         m_goingDown = false;
     }
 
-    //TODO : Relier au reste des scripts
-    public void StartDiving()
-    {
-        m_diving = true;
-    }
-
     internal void DiveAgain()
     {
+        m_harpoonRifleController.enabled = true;
         m_currentOxygen = maxOxygen;
         collectedGold = 0;
         onGoldChange.Invoke(collectedGold);

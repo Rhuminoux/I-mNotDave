@@ -13,5 +13,6 @@ public class DiveResumeUI : MonoBehaviour
     {
         m_deepnessText.text = "Deepness : " + stats.finalDeepness.ToString() + " m";
         m_treasureMoneyText.text = "Treasure Collected : " + stats.collectedGold.ToString();
+        m_fishMoneyText.text = "Fishes Collected : " + stats.fishGold.ToString();
     }
 }
