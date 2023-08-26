@@ -7,10 +7,13 @@ using static AreaEntrance;
 
 public class DiveStats : MonoBehaviour
 {
+    
+    
     public float maxOxygen;
     public int collectedGold = 0;
     [SerializeField] private BodyPartManager m_bodyPartManager;
 
+    
     private float m_currentOxygen;
     private bool m_goingDown = true;
     private bool m_diving = true;
@@ -31,11 +34,14 @@ public class DiveStats : MonoBehaviour
 
     private void Awake()
     {
+        
         m_currentOxygen = maxOxygen;
+        
     }
-
+    
     private void Update()
     {
+     
         if (!m_diving)
             return;
         Move();
@@ -43,6 +49,18 @@ public class DiveStats : MonoBehaviour
         if (m_currentOxygen < 0)
             Drawn();
         ChangeOxygen();
+<<<<<<< Updated upstream
+=======
+        
+
+        if (!m_goingDown && m_deepness == 0)
+        {
+            m_diving = false;
+            onEmerge.Invoke();
+            
+        }
+        
+>>>>>>> Stashed changes
     }
 
     private int _intDeepness = 0;

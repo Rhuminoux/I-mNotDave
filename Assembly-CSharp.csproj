@@ -89,12 +89,20 @@
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\BackgroundController.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\DeathMenu.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\_SCRIPTS\EQUIPEMENT\SwimsuitSO.cs" />
+=======
+    <Compile Include="Assets\harpoonProjectile.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />
     <Compile Include="Assets\_SCRIPTS\BodyPartManager.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\SpawnerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\ChestController.cs" />
+=======
+    <Compile Include="Assets\harpoonController.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\CursorController.cs" />
   </ItemGroup>
   <ItemGroup>

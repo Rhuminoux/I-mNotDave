@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         else if (1 << collision.gameObject.layer == LayerMask.GetMask("Enemy"))
         {
             m_diveStats.RemoveOxygen(6);
+<<<<<<< Updated upstream
             animator.SetTrigger("Hurt");
         }
     }
@@ -104,12 +105,19 @@ public class PlayerController : MonoBehaviour
         if (1 << collision.gameObject.layer == LayerMask.GetMask("Entrance"))
         {
             m_diveStats.ChangeCurrentArea(collision.GetComponent<AreaEntrance>().areType);
+=======
+            
+>>>>>>> Stashed changes
         }
     }
 
     internal void FlipPlayerUp()
     {
         transform.localScale = new Vector3(1, -1, 1);
+<<<<<<< Updated upstream
+=======
+        speed = -1;
+>>>>>>> Stashed changes
     }
 
     internal void BoostAscent(int bonus)
