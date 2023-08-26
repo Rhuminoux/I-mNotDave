@@ -10,29 +10,15 @@ public class SharkController : MovingObject
 
     private void Awake()
     {
-        m_direction.x = Random.Range(0, 2) == 0 ? -1 : 1;
-        m_direction.y = Random.Range(0, 2) == 0 ? 1 : -1;
-
-        if (m_direction.x == -1)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-            m_destination.x = PlayerController.Singleton.transform.position.x - 9;
-            m_spawnPoint.x = PlayerController.Singleton.transform.position.x + 9;
-        }
-        else
-        {
-            m_destination.x = PlayerController.Singleton.transform.position.x + 9;
-            m_spawnPoint.x = PlayerController.Singleton.transform.position.x - 9;
-        }
         
-
-        m_destination.y = Random.Range(PlayerController.Singleton.transform.position.y + 3.9f,
-                PlayerController.Singleton.transform.position.y - 3.9f);
-        m_spawnPoint.y = m_destination.y * -1;
+        m_spawnPoint.y = PlayerController.Singleton.transform.position.y - 5;
+        m_spawnPoint.x = Random.Range(PlayerController.Singleton.transform.position.x - 8, PlayerController.Singleton.transform.position.x + 8);
 
         transform.position = m_spawnPoint;
 
-        _movingDirection = (Vector3)m_destination - transform.position;
+        _movingDirection = PlayerController.Singleton.transform.position - transform.position;
+        if (_movingDirection.x < transform.position.x)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
     
     
@@ -51,6 +37,5 @@ public class SharkController : MovingObject
     protected override void Move()
     {
         transform.position += (_movingDirection * speed * Time.fixedDeltaTime);
-        transform.position += Vector3.up * Time.fixedDeltaTime * 0.5f;
     }
 }

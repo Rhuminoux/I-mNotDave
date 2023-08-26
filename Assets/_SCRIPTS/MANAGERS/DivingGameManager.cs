@@ -23,13 +23,17 @@ public class DivingGameManager : MonoBehaviour
         m_diveStats.onOxygenChange += OnOxygenChanged;
         m_diveStats.onDrawn += OnDrawn;
         m_diveStats.onDeepnessChange += OnDeepnessChange;
-        m_diveStats.onAscended += OnAscended;
+        m_diveStats.onEmerge += OnEmerge;
+        m_diveStats.onChangeArea += OnChangeArea;
+
+        Dive();
+        m_diveStats.SetNewSuit(0);
     }
 
     private void StartGoingUp()
     {
+        m_playerController.GoingUp();
         m_diveStats.StartGoingUp();
-        m_playerController.FlipPlayerUp();
         m_spawnerManagers.SetSpawnersActive(false);
         m_gameUI.SetAscentWheelActive();
         //TODO stop spawners
@@ -68,9 +72,76 @@ public class DivingGameManager : MonoBehaviour
         m_gameUI.DeepnessChange(deepness);
     }
 
-    private void OnAscended()
+    private void OnEmerge()
+    {
+        Time.timeScale = 0;
+        m_playerStats.AddMoneyToChess(m_diveStats.collectedGold);
+        m_gameUI.Emerge(m_diveStats, m_playerStats);
+    }
+
+    public void Dive()
+    {
+        Time.timeScale = 1;
+        m_gameUI.DiveAgain();
+        m_diveStats.DiveAgain();
+        m_playerController.DiveAgain();
+        m_spawnerManagers.SetSpawnersActive(true);
+    }
+
+    public void UpgradeSuit(int price)
     {
 
+        if (price < m_playerStats.chestMoney)
+        {
+            if (m_diveStats.UpgradeSuit())
+            {
+                m_playerController.speed += 0.5f;
+                m_playerStats.chestMoney -= price;
+                m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
+            }
+        }
+    }
+
+    public void UpgradeOxygenBottles(int price)
+    {
+        if (price < m_playerStats.chestMoney)
+        {
+            m_playerStats.chestMoney -= price;
+            m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
+            m_diveStats.ChangeOxygenBottles(30);
+        }
+    }
+
+    private void OnChangeArea(AreaEntrance.AREATYPE areaType)
+    {
+        m_spawnerManagers.SetNewArea((int)areaType);
+        _changingColor = false;
+        switch (areaType) {
+            case AreaEntrance.AREATYPE.SURFACE:
+                StartCoroutine(ChangeBackgroundColor(Camera.main.backgroundColor, (Color)new Color32(80, 185 ,235, 0), 2, 1));
+                break;
+            case AreaEntrance.AREATYPE.CAVE:
+                StartCoroutine(ChangeBackgroundColor(Camera.main.backgroundColor, (Color)new Color32(35, 75, 94, 0), 2, 1));
+                break;
+        }
+    }
+
+    private bool _changingColor = false;
+    IEnumerator ChangeBackgroundColor(Color fromColor, Color toColor, float duration, int durationEachPass)
+    {
+        if (_changingColor)
+        {
+            yield break;
+        }
+        _changingColor = true;
+        for (float t = 0.0f; t < duration; t += Time.deltaTime)
+        {
+            Camera.main.backgroundColor = Color.Lerp(fromColor, toColor, t);
+
+            //Wait for a frame
+            yield return null;
+        }
+        _changingColor = false;
     }
     #endregion
 }

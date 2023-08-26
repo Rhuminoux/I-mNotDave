@@ -44,13 +44,13 @@ public class SpinningWheel : MonoBehaviour
 
         if (rotation > m_lowBonusRange.first && rotation < m_lowBonusRange.second)
         {
-            _bonus = 5;
+            _bonus = 2;
             if (rotation > m_mediumBonusRange.first && rotation < m_mediumBonusRange.second)
             {
-                _bonus = 8;
+                _bonus = 3;
                 if (rotation > m_highBonusRange.first && rotation < m_highBonusRange.second)
                 {
-                    _bonus = 10;
+                    _bonus = 4;
 
                 }
             }

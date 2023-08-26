@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0fc281cb6987d4abb8d2789a7eaf83, type: 3}
+  m_Name: Swimsuit_2
+  m_EditorClassIdentifier: 
+  SwimsuitLevel: 0
+  legSprites:
+  - {fileID: 3145526594566852211, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 8521235574789404839, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: -200727987993604910, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 2529233102384405704, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 2352562841939857121, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 7297242420145636296, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 1296670954411314196, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 4081918129669215784, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 6139992824650577799, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 2449248422594126590, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 345457741463107051, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: -8130774673187792545, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 6933197427577110431, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 6746421935264340109, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  - {fileID: 3566057188968786898, guid: e8608892925beb14e9e0ab88cb09b697, type: 3}
+  armSprites:
+  - {fileID: 1553330096772576967, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
+  - {fileID: -2126597059, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
+  mouthSprites:
+  - {fileID: 1363419849112118149, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
+  - {fileID: 2340383373546688413, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
+  lightSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  lampSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  headSprites:
+  - {fileID: -4407147980825112282, guid: b89e0384487652449bb534f03d3780a9, type: 3}
+  - {fileID: 6596364355237560675, guid: b89e0384487652449bb534f03d3780a9, type: 3}
+  backSprites:
+  - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
+  - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
+  - {fileID: 1765885003056983630, guid: 66e78e3faf14a6a4085b557851f222c2, type: 3}
+  trunkSprites:
+  - {fileID: -5218269537229293453, guid: 62aebf034a61bac42b346c9ce264ac86, type: 3}
+  - {fileID: 2120225148091003014, guid: 62aebf034a61bac42b346c9ce264ac86, type: 3}

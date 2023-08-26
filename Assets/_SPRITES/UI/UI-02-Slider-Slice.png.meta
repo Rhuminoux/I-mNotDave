@@ -115,11 +115,11 @@ TextureImporter:
         serializedVersion: 2
         x: 2
         y: 0
-        width: 16
+        width: 23
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 7, z: 6, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -257,106 +257,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-02-Slider-Slice_
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 0
-        width: 2
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fae1f3d24255e3449328ac8843c2dad
-      internalID: 1579814896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-02-Slider-Slice_9
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 0
-        width: 5
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6d55a09ea2f1a947a18978b0c305834
-      internalID: 1933084927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI-02-Slider-Slice_10
       rect:
         serializedVersion: 2
         x: 75
         y: 4
-        width: 4
+        width: 10
         height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 3, z: 4, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7873e511a2af5814ab251be24a5b2738
       internalID: -2004508161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-02-Slider-Slice_8
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 4
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94e449acc14ce7844abdb219730c52e1
-      internalID: 1623180490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI-02-Slider-Slice_4
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 4
-        width: 2
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d510a9b759a06d4dadc154a15bf183e
-      internalID: 1130669319
       vertices: []
       indices: 
       edges: []
