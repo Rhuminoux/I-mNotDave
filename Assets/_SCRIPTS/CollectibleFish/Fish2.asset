@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc09bc23e4f9b864b9314527b6c838f3, type: 3}
+  m_Name: Fish2
+  m_EditorClassIdentifier: 
+  animationSprites:
+  - {fileID: 1637908473016165790, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 7405816044951450177, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 1794030221944741891, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 9139551607915933109, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 3615657404615402456, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 8594845180904483408, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: 6602913951666153652, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  - {fileID: -368645518, guid: 251fb508463872b48a53011d72d6f2e8, type: 3}
+  deathSprite: {fileID: 4209807164197814999, guid: 7561d009ae999164c92b6241f4e25d82, type: 3}
+  lvl: 2

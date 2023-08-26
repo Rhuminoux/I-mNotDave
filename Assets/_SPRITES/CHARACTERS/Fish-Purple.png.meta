@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,7 +133,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,9 +152,9 @@ TextureImporter:
       name: Fish-Purple_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 33
+        x: 16
+        y: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,9 +173,9 @@ TextureImporter:
       name: Fish-Purple_2
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 32
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,7 +194,7 @@ TextureImporter:
       name: Fish-Purple_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 16
         width: 16
         height: 16
@@ -215,9 +215,9 @@ TextureImporter:
       name: Fish-Purple_4
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 15
+        x: 16
+        y: 16
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       name: Fish-Purple_5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -257,9 +257,9 @@ TextureImporter:
       name: Fish-Purple_6
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 0
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -274,10 +274,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fish-Purple_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21bd6abb8995a04386d4bc896f86760
+      internalID: 495457958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0ed52bf3058fde1468e102dd6d5b10e4
     internalID: 0
     vertices: []
     indices: 
@@ -292,6 +313,7 @@ TextureImporter:
       Fish-Purple_4: -1250344266311440404
       Fish-Purple_5: 8115037120866902450
       Fish-Purple_6: 3238062562461878283
+      Fish-Purple_7: 495457958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
