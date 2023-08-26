@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGroundFx
+    uniqueID: 1697799655
+    locked: 0
+  - name: Decorations
+    uniqueID: 354432237
+    locked: 0
+  - name: Tiles
+    uniqueID: 3975393067
+    locked: 0
+  - name: Player
+    uniqueID: 3281711835
+    locked: 0
+  - name: Fishes
+    uniqueID: 3755313281
+    locked: 0
+  - name: FrontFx
+    uniqueID: 3493757525
+    locked: 0
+  - name: UI
+    uniqueID: 1614166943
+    locked: 0

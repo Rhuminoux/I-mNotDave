@@ -14,11 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwimsuitLevel: 0
   legSprites:
-  - {fileID: 4158479877657383339, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: 7398550871092307156, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: -1571279241654085692, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: 5675411012913205501, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
-  - {fileID: -2943069934844399346, guid: 0588b46defc9ec8488e2184554dca85d, type: 3}
+  - {fileID: 7353114426465298156, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5029392915139540660, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 939180428670755608, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -1708104553978874552, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 5117694564431846622, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5244225313194243206, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5389996737015095946, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 4992757373517491477, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 8659798613820867177, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -5451618073129087323, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -784923115801351980, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: -2363538688400758804, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 8736318677785800354, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 1541189485146527032, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
+  - {fileID: 3401381558386826058, guid: fdeb8f56b24429a4eaff07ff156a8f92, type: 3}
   armSprites:
   - {fileID: 1553330096772576967, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
   - {fileID: -2126597059, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}

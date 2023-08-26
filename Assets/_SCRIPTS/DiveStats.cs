@@ -76,7 +76,7 @@ public class DiveStats : MonoBehaviour
 
     public void AddGold(int goldToAdd)
     {
-        goldToAdd *= (int)(transform.position.y * -1) / 10;
+        goldToAdd *= (int)Math.Ceiling((transform.position.y * -1) / 10);
         collectedGold += goldToAdd;
         onGoldChange.Invoke(collectedGold);
     }
