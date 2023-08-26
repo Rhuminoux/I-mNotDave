@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Turning", m_xAxis != 0);
         Vector3 newScale = new Vector3(1, 1, 1);
-        if (m_xAxis > 0){
+        if (m_xAxis < 0){
             newScale.x = -1;
         }
         if (m_yAxis > 0 ){

@@ -95,6 +95,7 @@ public class DivingGameManager : MonoBehaviour
         {
             if (m_diveStats.UpgradeSuit())
             {
+                m_playerController.speed += 0.5f;
                 m_playerStats.chestMoney -= price;
                 m_gameUI.ChestGoldChange(m_playerStats.chestMoney);
             }

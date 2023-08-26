@@ -33,8 +33,8 @@ MonoBehaviour:
   - {fileID: 1553330096772576967, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
   - {fileID: -2126597059, guid: 9a1faae5c8dc35446918f4a564a35f6b, type: 3}
   mouthSprites:
-  - {fileID: 1363419849112118149, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
-  - {fileID: 2340383373546688413, guid: 27e3d00d4361fba448fa74b664847799, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   lightSprites:
   - {fileID: 0}
   - {fileID: 0}
