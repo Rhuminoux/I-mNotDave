@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
         m_diveStats = GetComponent<DiveStats>();
         animator = GetComponent<Animator>();
     }
+
+    private RaycastHit2D _hit;
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +41,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             onPressEscape.Invoke();
         if (!m_isGoingUp && Input.GetKeyDown(KeyCode.Space))
-            onPressSpace.Invoke();
+        {
+            _hit = Physics2D.Raycast(transform.position, Vector2.up, Mathf.Infinity, LayerMask.GetMask("Default"));
+
+            if (_hit.collider == null)
+                onPressSpace.Invoke();
+        }
         if (m_ascentBoost > 1)
         {
             m_ascentBoost -= m_ascentBoost * Time.deltaTime;
@@ -70,10 +77,12 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetBool("Turning", m_xAxis != 0);
         Vector3 newScale = new Vector3(1, 1, 1);
-        if (m_xAxis < 0){
+        if (m_xAxis < 0)
+        {
             newScale.x = -1;
         }
-        if (m_yAxis > 0 ){
+        if (m_yAxis > 0)
+        {
             newScale.y = -1;
         }
         transform.localScale = newScale;
@@ -119,7 +128,7 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
-        
+
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
