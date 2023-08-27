@@ -74,6 +74,7 @@ public class AudioManager : MonoBehaviour
             else
                 s.source.volume = s.volume * sfxLevel;
             s.source.pitch = s.pitch;
+            s.source.pitch = 1; //Hard pitch
             s.source.loop = s.loop;
         }
     }

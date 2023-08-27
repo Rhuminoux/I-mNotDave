@@ -74,6 +74,7 @@ public class DivingGameManager : MonoBehaviour
 
     private void OnEmerge()
     {
+        AudioManager.Instance.Play("Emerge");
         Time.timeScale = 0;
         m_playerStats.AddMoneyToChess(m_diveStats.collectedGold + m_diveStats.fishGold);
         m_gameUI.Emerge(m_diveStats, m_playerStats);
@@ -81,6 +82,7 @@ public class DivingGameManager : MonoBehaviour
 
     public void Dive()
     {
+        AudioManager.Instance.Play("DiveAgain");
         Time.timeScale = 1;
         m_gameUI.DiveAgain();
         m_diveStats.DiveAgain();

@@ -61,6 +61,7 @@
     <Compile Include="Assets\_SCRIPTS\UTILS\SceneManagement.cs" />
     <Compile Include="Assets\_SCRIPTS\SPAWNER\CreaturesSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\DivingGameManager.cs" />
+    <Compile Include="Assets\_SCRIPTS\AlgueSpawner.cs" />
     <Compile Include="Assets\_SCRIPTS\CONTROLLERS\HarpoonController.cs" />
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\BounceOnTick.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\ShopUI.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\_SCRIPTS\SZYMLIB\Ticker.cs" />
     <Compile Include="Assets\_SCRIPTS\EQUIPEMENT\SwimsuitSO.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\SpinningWheel.cs" />
+    <Compile Include="Assets\_SCRIPTS\ExtendedRuleTile.cs" />
     <Compile Include="Assets\_SCRIPTS\BodyPartManager.cs" />
     <Compile Include="Assets\_SCRIPTS\MANAGERS\SpawnerManager.cs" />
     <Compile Include="Assets\_SCRIPTS\UI\InGameUIManager.cs" />

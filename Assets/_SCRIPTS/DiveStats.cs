@@ -43,6 +43,7 @@ public class DiveStats : MonoBehaviour
 
     private void FishCatched(CollectibleFishController fishController)
     {
+        AudioManager.Instance.Play("Catched");
         fishGold += fishController.fishValue;
     }
 
@@ -88,6 +89,7 @@ public class DiveStats : MonoBehaviour
 
     public void AddGold(int goldToAdd)
     {
+        AudioManager.Instance.Play("Catched");
         goldToAdd *= (int)Math.Ceiling((transform.position.y * -1) / 10);
         collectedGold += goldToAdd;
         onGoldChange.Invoke(collectedGold);

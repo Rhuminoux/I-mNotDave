@@ -35,6 +35,7 @@ public class HarpoonRifleController : MonoBehaviour
             m_cursor.transform.position = _mousePosition2d;
             if (Input.GetMouseButtonDown(0))
             {
+                AudioManager.Instance.Play("HarpoonShoot");
                  m_canShoot = false;
                 m_spriteRenderer.sprite = m_sprites[0];
                 m_cursor.GetComponent<SpriteRenderer>().enabled = false;

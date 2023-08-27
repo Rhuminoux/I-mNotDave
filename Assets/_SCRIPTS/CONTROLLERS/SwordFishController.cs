@@ -22,6 +22,7 @@ public class SwordFishController : MovingObject
             m_direction = Vector2.left;
             transform.localScale = new Vector3(-1, 1, 1);
         }
+        AudioManager.Instance.Play("FishSound");
     }
 
 

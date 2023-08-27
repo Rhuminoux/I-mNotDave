@@ -19,6 +19,7 @@ public class SharkController : MovingObject
         _movingDirection = PlayerController.Singleton.transform.position - transform.position;
         if (_movingDirection.x < transform.position.x)
             transform.localScale = new Vector3(-1, 1, 1);
+        AudioManager.Instance.Play("FishSound");
     }
     
     

@@ -119,6 +119,7 @@ public class PlayerController : MonoBehaviour
 
     public void DiveAgain()
     {
+        
         m_isGoingUp = false;
         transform.localScale = new Vector3(1, 1, 1);
         transform.position = Vector3.down;
