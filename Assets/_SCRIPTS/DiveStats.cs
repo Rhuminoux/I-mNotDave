@@ -118,6 +118,7 @@ public class DiveStats : MonoBehaviour
         m_harpoonRifleController.enabled = true;
         m_currentOxygen = maxOxygen;
         collectedGold = 0;
+        fishGold = 0;
         onGoldChange.Invoke(collectedGold);
         onOxygenChange.Invoke(m_currentOxygen);
         m_goingDown = true;

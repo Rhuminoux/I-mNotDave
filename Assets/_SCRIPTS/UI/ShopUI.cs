@@ -32,12 +32,14 @@ public class ShopUI : MonoBehaviour
 
     public void SetSuit(ShopArticleSO article)
     {
+        m_buyButton.onClick.RemoveAllListeners();
         SetUI(article);
         m_buyButton.onClick.AddListener(() => { m_gameManager.UpgradeSuit(article.price); });
     }
 
     public void SetBottles(ShopArticleSO article)
     {
+        m_buyButton.onClick.RemoveAllListeners();
         SetUI(article);
         m_buyButton.onClick.AddListener(() => { m_gameManager.UpgradeOxygenBottles(article.price); });
     }

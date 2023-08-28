@@ -26,8 +26,9 @@ public class DivingGameManager : MonoBehaviour
         m_diveStats.onEmerge += OnEmerge;
         m_diveStats.onChangeArea += OnChangeArea;
 
-        Dive();
         m_diveStats.SetNewSuit(0);
+        Dive();
+        
     }
 
     private void StartGoingUp()
@@ -64,7 +65,7 @@ public class DivingGameManager : MonoBehaviour
     private void OnDrawn()
     {
         m_gameUI.ActivateDrawnScreen();
-        Time.timeScale = Time.timeScale == 1 ? 0 : 1;
+        PauseGame(true);
     }
 
     private void OnDeepnessChange(int deepness)
@@ -75,7 +76,7 @@ public class DivingGameManager : MonoBehaviour
     private void OnEmerge()
     {
         AudioManager.Instance.Play("Emerge");
-        Time.timeScale = 0;
+        PauseGame(true);
         m_playerStats.AddMoneyToChess(m_diveStats.collectedGold + m_diveStats.fishGold);
         m_gameUI.Emerge(m_diveStats, m_playerStats);
     }
@@ -83,7 +84,7 @@ public class DivingGameManager : MonoBehaviour
     public void Dive()
     {
         AudioManager.Instance.Play("DiveAgain");
-        Time.timeScale = 1;
+        PauseGame(false);
         m_gameUI.DiveAgain();
         m_diveStats.DiveAgain();
         m_playerController.DiveAgain();
@@ -146,4 +147,12 @@ public class DivingGameManager : MonoBehaviour
         _changingColor = false;
     }
     #endregion
+
+    private void PauseGame(bool isPaused)
+    {
+        if (isPaused)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
 }

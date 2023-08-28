@@ -38,5 +38,7 @@ public class SharkController : MovingObject
     protected override void Move()
     {
         transform.position += (_movingDirection * speed * Time.fixedDeltaTime);
+        if (transform.position.y > 0)
+            _movingDirection.y *= -1;
     }
 }

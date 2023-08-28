@@ -40,5 +40,7 @@ public class SwordFishController : MovingObject
     protected override void Move()
     {
         transform.position += (Vector3)(m_direction * speed * Time.fixedDeltaTime);
+        if (transform.position.y > 0)
+            m_direction.y *= -1;
     }
 }

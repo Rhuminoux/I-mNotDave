@@ -59,8 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!m_isGoingUp)
         {
-            m_rigidbody2D.velocityX = m_xAxis * speed;
-            m_rigidbody2D.velocityY = m_yAxis * speed;
+            m_rigidbody2D.velocity = (new Vector2(m_xAxis, m_yAxis) * speed).normalized;
             if (transform.position.y >= 0)
             {
                 transform.position = new Vector2(transform.position.x, 0);
